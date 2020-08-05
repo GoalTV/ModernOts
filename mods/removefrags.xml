@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mod name="Frag Remover" version="1.1" author="Hermes" contact="otland.net" enabled="yes">
+<action itemid="9969" event="script"><![CDATA[
+local noRemove = {SKULL_WHITE, SKULL_YELLOW}
+local playerSkull = getPlayerSkullType(cid)
+if isInArray(noRemove, playerSkull) then
+doPlayerSendCancel(cid, "You can't remove this type of skull.")
+doSendMagicEffect(getPlayerPosition(cid), CONST_ME_POFF)
+return true
+elseif playerSkull == SKULL_NONE then
+doPlayerSendCancel(cid, "You don't have skull.")
+doSendMagicEffect(getPlayerPosition(cid), CONST_ME_POFF)
+return true
+else
+db.executeQuery("UPDATE `killers` SET `unjustified` = 0 WHERE `id` IN (SELECT `kill_id` FROM `player_killers` WHERE `player_id` = " .. getPlayerGUID(cid) .. ")")
+doCreatureSetSkullType(cid,0)
+doPlayerSendTextMessage(cid, 27, "Your frags & your skull have been removed!")
+doSendMagicEffect(getPlayerPosition(cid), CONST_ME_MAGIC_RED)
+doSendAnimatedText(getPlayerPosition(cid), "POFF!", 180)
+doPlayerSetSkullEnd(cid, 0, getPlayerSkullType(cid))
+doRemoveItem(item.uid, 1)
+end
+return true
+]]></action>
+</mod> 

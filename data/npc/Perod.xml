@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Perod" script="data/npc/scripts/Perod.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="128" head="58" body="68" legs="12" feet="114" addons="0"/>
+<voices>
+<voice text="Stop by before embarking on your great adventure! Distance weapons and general equipment on sale today!" interval2="110" margin="1" yell="no"/>
+</voices>
+</npc>

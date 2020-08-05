@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+  <!--Announcements-->
+  <announce delay="100000" type="event" message="Halloween Pumpkiny pojawia sie w miescie!!" />
+  <announce delay="100002" type="event" message="Musisz je znalezc !!" />
+  <!--Single Spawns-->
+  <areaspawn delay="100000" fromx="985" fromy="1013" fromz="7" tox="995" toy="1022" toz="7">
+    <monster name="Halloween Pumpkin" amount="10"/>
+  </areaspawn>
+  <!--Area Spawns-->
+</raid>

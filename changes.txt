@@ -1,0 +1,31 @@
+--0.01
+-Set GitHub
+-Clean up of dupicated source
+-Clean up of unecessary files such as SQlite, theforgottenserver linux file,
+-clean up duplicated files
+
+-- 0.02
+-Add Windows Support
+-Fixed Case Sensetive 
+-fixed mana_heal.lua
+-removed zombie onsay.lua event is non existance
+-fixed duplicated commands in talkactions /jail /unjail :p
+-fixed binfo.lua typo in script
+-removed from config level.lua non existance file
+-removed from config teleports-inquisition.lua non existance file
+-removed from config Inquistion.lua non existance file
+-fixed duplicated clean in globalevents
+-fixed vip.lua is vip.lua2 (not fully tested)
+-And small tweaks to files
+
+
+-- 0.3 (Unstable not tested)
+-Removed suppoort for Windows (It may still work with old version of source Crying damson 0.3.6).
+-Updated to run on Ubuntu VERSION="20.04.1 LTS (Focal Fossa)".
+-Fixed db.query issue.
+-Fixed scripts.
+-Fixed console errors.
+-Edited Source to work on latest Ubunutu Distro.
+-Clean up few files.
+-Removed non-working scripts.
+-fixed non-loaded spells and runes.

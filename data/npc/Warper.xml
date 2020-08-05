@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Warper" script="data/npc/scripts/all_places_vip.lua" walkinterval="2000" floorchange="0">
+    <health now="185" max="185"/>
+    <look type="289" head="0" body="120" legs="120" feet="132" addons="2"/>
+  <parameters>
+    <parameter key="message_greet" value="Welcome on warper service, Sir |PLAYERNAME|. I can also explain the {warper system}." />
+	<parameter key="message_farewell" value="Good bye and come again."/>
+	<parameter key="module_keywords" value="2" />
+	<parameter key="keywords" value="warper system;warp" />
+	<parameter key="keyword_reply1" value="I can warp you to some places, because you are vip player, you need say {warp} and I tell you the places can i warp you" />
+    <parameter key="keyword_reply2" value="{POI}, {Anihilaitor}, {Demon Helmet}, {Demon Oak}, {Warlock Abdendriel}, {Demons Ethno},{Inqisition} " />
+ </parameters>
+</npc>

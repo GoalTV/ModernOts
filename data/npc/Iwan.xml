@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Iwan" script="data/npc/scripts/Iwan.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="128" head="0" body="112" legs="88" feet="113" addons="0"/>
+<voices>
+<voice text="Gems of all kinds! Precious jewellery!" interval2="100" margin="1" yell="no"/>
+</voices>
+</npc>

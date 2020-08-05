@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Henricus" script="Henricus.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="132" head="0" body="78" legs="50" feet="39"/>
+	<parameters>
+		<parameter key="message_greet" value="Be greeted |PLAYERNAME|. How can I be of service?" />
+		<parameter key="message_farewell" value="Farewell." />		
+		<parameter key="message_buy" value="Do you want to purchase |ITEMCOUNT| |ITEMNAME| for |TOTALCOST| gold?" />
+		<parameter key="message_sell" value="Do you want to sell |ITEMCOUNT| |ITEMNAME| for |TOTALCOST| gold?" />
+		<parameter key="message_decline" value="Well, obviously not." />		
+		<parameter key="message_onbuy" value="It'll serve you well!" />
+		<parameter key="message_onsell" value="Thank you." />
+		<parameter key="message_walkaway" value="Farewell." />
+		
+		<parameter key="module_keywords" value="1" />
+		<parameter key="module_shop" value="1"/>
+		<parameter key="keywords" value="job;" />
+		<parameter key="keyword_reply1" value="I offer some rares that no other has." />
+		<parameter key="shop_buyable" value=""/>
+		<parameter key="shop_sellable" value=""/>
+	</parameters>
+</npc>

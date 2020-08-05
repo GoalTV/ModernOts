@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Cael" script="data/npc/scripts/Cael.lua" walkinterval="2000" floorchange="0">
+	<health now="185" max="185"/>
+    <look type="66" head="0" body="0" legs="0" feet="0" addons="0"/>
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="module_keywords" value="1" />
+        <parameter key="keywords" value="exchange;" />
+		<parameter key="keyword_reply1" value="I can exchange {red piece of cloth} for a Dragon Throne, are you interested? "/>
+		<parameter key="shop_buyable" value="blessed wooden stake,3953,1000;obsidian knife,3952,5000;" />
+		<parameter key="message_greet" value="Oh, Welcome |PLAYERNAME|!" />
+		<parameter key="message_sendtrade" value="Here is my offer, also ask me for {exchange} if you want to get some special items!" />
+		<parameter key="message_farewall" value="Good bye!"/>
+		<parameter key="message_walkaway" value="Good bye then!"/>
+	</parameters>
+</npc>

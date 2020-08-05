@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Wyrdin" script="data/npc/scripts/Wyrdin.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="130" head="76" body="77" legs="79" feet="116" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Hello |PLAYERNAME|, what brings you here?" />
+		<parameter key="message_farewell" value="Farewell." />		
+		<parameter key="message_decline" value="Then not." />		
+		<parameter key="message_walkaway" value="How rude!" />
+	</parameters>
+</npc>

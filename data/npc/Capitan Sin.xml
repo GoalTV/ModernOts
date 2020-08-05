@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Captain Sin" script="data/npc/scripts/TP1/boat_ank.lua" walkinterval="2000" floorchange="0">
+    <health now="100" max="100"/>
+<look type="129" head="19" body="113" legs="95" feet="115" addons="0"/>
+    <parameters>
+        <parameter key="message_greet" value="Welcome on board, |PLAYERNAME|. Do you want to {travel}?"/>
+        <parameter key="message_farewell" value="Good bye. Recommend us if you were satisfied with our service."/>
+    </parameters>
+</npc>

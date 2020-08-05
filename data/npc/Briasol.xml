@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Briasol" script="data/npc/scripts/Briasol.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="159" head="3" body="86" legs="87" feet="76" addons="0"/>
+ <voices>
+<voice text="I have gems and beautiful jewellery for you!" interval2="100" margin="1" yell="no"/>
+</voices>
+</npc>

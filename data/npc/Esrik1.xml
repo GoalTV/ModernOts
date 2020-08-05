@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Esrik" script="data/npc/scripts/default.lua" walkinterval="2000" floorchange="0">
+	<health now="185" max="185"/>
+	<look type="71" head="0" body="0" legs="0" feet="0" addons="0"/>
+<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_farewell" value="Good Bye."/>
+		<parameter key="message_walkaway" value="Good Bye." />
+		<parameter key="message_greet" value="Hello |PLAYERNAME|. I have been expecting you!" />
+		<parameter key="shop_buyable" value="axe,2386,20;axe,2417,350;axe,2465,450;axe,2464,200;axe,2458,52;axe,2648,80;axe,2379,5;axe,2380,8;axe,2467,35;axe,2461,12;axe,2398,90;axe,2384,15;axe,2385,35;axe,2389,10;axe,2509,240;axe,2376,85;axe,2410,25;axe,2512,15;axe,11301,4000;axe,11303,1100;axe,11304,3000;" />
+		<parameter key="shop_sellable" value="axe,2386,7;axe,2378,80;axe,2417,120;axe,2513,95;axe,2465,150;axe,2464,70;axe,2458,17;axe,2648,25;axe,2381,400;axe,2380,4;axe,2467,12;axe,2398,30;axe,2394,90;axe,2463,400;axe,2384,5;axe,2385,12;axe,2389,3;axe,2457,190;axe,2509,80;axe,2376,25;axe,2377,450;axe,2512,5;" />
+	</parameters>
+</npc>

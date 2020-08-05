@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Towncryer" script="data/npc/scripts/Towncryer.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="131" head="95" body="86" legs="10" feet="114" addons="1"/>
+	<parameters>
+		<parameter key="message_greet" value="Sorry, I'm busy!"/>
+		<parameter key="message_farewell" value="Bye."/>
+		<parameter key="message_walkaway" value="Bye." />
+		<parameter key="module_keywords" value="1" />
+	</parameters>
+</npc>

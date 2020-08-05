@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Torsten" nameDescription="a Torsten" race="blood" experience="360000" speed="700" manacost="44470">
+	<health now="38000" max="38000"/>
+    <look type="152" head="114" body="114" legs="132" feet="132" addons="3" corpse="6022"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+  <attacks>
+		<attack name="melee" interval="1000" skill="270" attack="250"/>
+    <attack name="physical" interval="1500" chance="20" range="7" min="-605" max="-1245">
+			<attribute key="shootEffect" value="spear"/>
+    </attack>
+	<attack name="melee" interval="2000" chance="50" range="7" radius="5" target="0" min="-1500" max="-5000">
+			<attribute key="areaEffect" value="blackspark"/>
+</attack>
+  </attacks>
+	<defenses armor="50" defense="50">
+		<defense name="healing" interval="2000" chance="12" min="4500" max="10000">
+		<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="99" speedchange="1500" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="1"/>
+		<immunity fire="1"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+  </immunities>
+	<elements>
+		<element holyPercent="30"/>
+		<element physicalPercent="30"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="4000" chance="10">
+		<voice sentence="YOUR MINE!!"/>
+		<voice sentence="FEEL MY POWER!"/>
+		<voice sentence="FIGHT OR DIE!!"/>
+		<voice sentence="NO MERCY!"/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="20" chance1="100000" chancemax="0"/> <!-- gp's -->
+	</loot>
+</monster>

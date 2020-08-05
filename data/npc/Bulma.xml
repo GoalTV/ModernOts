@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<npc name="Bulma" script="data/npc/scripts/default.lua" walkinterval="2000" floorchange="0"> 
+    <health now="100" max="100"/> 
+    <look type="139" head="113" body="57" legs="95" feet="113" addons="3"/> 
+    <parameters> 
+        <parameter key="module_shop" value="1"/> 
+        <parameter key="message_greet" value="Oi |PLAYERNAME|, Eu posso vender alguns items necessarios para seus addons, diga-me {trade} para ver o que eu posso lhe vender."/>
+        <parameter key="shop_buyable" value="banana staff,3966,10000;tribal mask,3967,15000;simon the beggar's favorite staff,6107,100000;brutus bloodbeard's hat,6099,100000;lethal lissy's shirt,6100,100000;deadeye devious' eye patch,6102,100000;ron the ripper's sabre,6101,100000;eye patch,6098,3000;peg legs,6126,3000;hook,6097,3000;ceiron's wolf tooth chain,5940,10000;waterhose,5938,10000;spools of yarn,5886,50000;warrior's sweat,5885,40000;fighting spirit,5884,80000;sniper gloves,5875,50000;white piece of cloth,5909,15000;elane's crossbow,5947,5000;green piece of cloth,5910,5000;red piece of cloth,5911,10000;blue piece of cloth,5912,5000;brown piece of cloth,5913,5000;yellow piece of cloth,5914,10000;lizard leather,5876,1000;green dragon leather,5877,1000;minotaur leather,5878,2000;giant spider silk,5879,8000;iron ore,5880,1000;lizard scale,5881,1000;red dragon scale,5882,5000;ape fur,5883,2000;chicken feather,5890,3000;perfect behemoth fang,5893,5000;bat wing,5894,1000;fish fin,5895,15000;bear paw,5896,5000;wolf paw,5897,3000;beholder eye,5898,5000;turtle shell,5899,2000;dwarven beard,5900,1000;honeycomb,5902,2000;vampire dust,5905,15000;demon dust,5906,20000;heaven blosson,5921,2000;holy orchid,5922,15000;behemoth claw,5930,35000;demonic essence,6500,1500;
+		dworc voodoo doll,5810,5000;vampiric crest,9955,100000;shard,7290,1000;hardened bone,5925,1000;blessed wooden stake,5942,10000;enchanted chicken wing,5891,50000;piece of royal stell,5887,50000;piece of draconian stell,5889,50000;piece of hell stell,5888,50000;ankh,2193,5000;huge chunk of crude iron,5892,150000"/> 
+    </parameters> 
+</npc> 

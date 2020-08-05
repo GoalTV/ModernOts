@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Punisher" script="data/npc/scripts/bountyhunters.lua" walkinterval="2000" floorchange="3">
+	<health now="150" max="150"/>
+	<look type="9" head="0" body="0" legs="0" feet="0" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Hello! I can announce to other people some offers of hunting players. Of course you have to pay. Do you want to hunt somebody today?" />
+	</parameters>
+</npc>

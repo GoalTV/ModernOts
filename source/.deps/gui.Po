@@ -1,0 +1,7 @@
+gui.o: gui.cpp /usr/include/stdc-predef.h gui.h definitions.h
+
+/usr/include/stdc-predef.h:
+
+gui.h:
+
+definitions.h:

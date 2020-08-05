@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Pompan" script="data/npc/scripts/Pompan.lua" walkinterval="2000" floorchange="0">
+	<health now="185" max="185"/>
+	<look type="132" head="78" body="13" legs="32" feet="108" addons="0"/>
+<voices>
+<voice text="General goods and paperware for sale!" interval2="100" margin="1" yell="no"/>
+</voices>
+<parameters>
+<parameter key="module_keywords" value="1" />
+        <parameter key="keywords" value="goods;" />
+		<parameter key="keyword_reply1" value="My inventory of general goods and paperware is large, ask me for a {trade} to take a look."/>
+        <parameter key="message_farewell" value="Good bye, |PLAYERNAME|."/>
+		<parameter key="message_walkaway" value="Good bye." />
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_sendtrade" value="Of course, just browse through my wares." />
+		<parameter key="message_greet" value="Oh, please come in, |PLAYERNAME|. What sort of {goods} do you need?" />
+		<parameter key="shop_buyable" value="blessed wooden stake,5942,10000;obsidian knife,5908,10000;shovel,2554,50;backpack,1988,20;fishing rod,2580,150;rope,2120,50;machete,2420,40;machete,2553,50;machete,1987,5;machete,1989,6;machete,2047,2;machete,2578,280;machete,2416,260;machete,11235,100;machete,11236,50;machete,2044,8;machete,2550,50;machete,2050,2;machete,2036,20;machete,3976,1;machete,11238,200;" />
+		<parameter key="shop_sellable" value="stake,2578,75;stake,2416,50;stake,2580,40;stake,2600,8;stake,2560,10;stake,2553,15;stake,2120,15;stake,2550,10;stake,2554,8;stake,2405,3;stake,2036,6;stake,11328,500;stake,11324,600;" />
+	</parameters>
+</npc>

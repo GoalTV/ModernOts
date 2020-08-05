@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mindfreak" nameDescription="Mindfreak" race="fire" experience="3490" speed="370" manacost="0">
+  <health now="5850" max="5850"/>
+<look type="256" corpse="2908"/>
+  <targetchange interval="10000" chance="5"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="85"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<attacks>
+    <attack name="melee" interval="2000" skill="60" attack="90"/>
+    <attack name="ice" interval="1000" chance="13" range="7" radius="6" target="1" min="-100" max="-300">
+		<attribute key="shootEffect" value="ice"/>
+		<attribute key="areaEffect" value="icearea"/>
+	</attack>
+    <attack name="lifedrain" interval="3000" chance="18" radius="7" target="0" min="-120" max="-400">
+		<attribute key="areaEffect" value="rednote"/>
+	</attack>
+		<attack name="speed" interval="1000" chance="17" range="7" radius="4" target="1" speedchange="-1900" duration="15000">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+    <attack name="death" interval="3000" chance="15" radius="7" target="0" min="-90" max="-100">
+		<attribute key="areaEffect" value="mortarea"/>
+	</attack>
+	<attack name="death" interval="2000" chance="16" length="8" spread="0" min="-180" max="-400">
+		<attribute key="areaEffect" value="mortarea"/>
+	</attack>
+    <attack name="speed" interval="3000" chance="25" target="1" speedchange="-800" duration="4000">
+		<attribute key="areaEffect" value="redshimmer"/>
+	</attack>
+</attacks>
+<defenses armor="70" defense="70">
+    <defense name="healing" interval="2000" chance="15" min="100" max="600">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element physicalPercent="60"/>
+		<element icePercent="-15"/>
+		<element deathPercent="65"/>
+		<element firePercent="-40"/>
+		<element holyPercent="-35"/>
+	</elements>
+  <immunities>
+    <immunity fire="0"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="3">
+	<summon name="Banshee" interval="1500" chance="100"/>
+	<summon name="Banshee" interval="1500" chance="100"/>
+	<summon name="Banshee" interval="1500" chance="100"/>					  
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="Me Mind it's freak" yell="1"/>
+    <voice sentence="U can't see me!"/>
+    <voice sentence="U will die!"/>
+	<voice sentence="Hmmm Larvas yomi :D!" yell="1"/>
+  </voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/> <!-- gold coin -->
+		<item id="2148" countmax="40" chance="100000"/> <!-- gold coin -->
+		<item id="2152" countmax="12" chance="10000"/> <!-- platinum coin -->
+		<item id="11205" chance="750"/> <!-- stuffed toad -->
+		<item id="3940" chance="5000"/> <!-- camouflage backpack -->
+		<item id="2541" chance="4200"/> <!-- Bone Shield -->
+		<item id="1987" chance="7000"> <!-- bag -->
+			<inside>
+			<item id="5898" countmax="5" chance="8000"/> <!-- Beholder eye -->
+			<item id="2149" countmax="20" chance="1500"/> <!-- Small Emerald -->
+			<item id="7404" chance="3000"/> <!-- assassin dagger -->
+			<item id="11239" countmax="5" chance="3600"/> <!-- platinum coin -->
+			<item id="8912" chance="3700"/> <!-- springout rod -->
+			<item id="3010" chance="10000"/> <!-- dead larva -->
+			</inside>	
+			
+		</item>
+	</loot>
+</monster>

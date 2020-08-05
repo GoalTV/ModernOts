@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+	<!-- Server Events -->
+        <globalevent name="save" interval="1800" event="script" value="save.lua"/>
+		<globalevent name="effects" interval="1" event="script" value="effects.lua"/>
+        <globalevent name="offtrain_add_minutes" interval="60000" event="script" value="offtrain_addminutes.lua"/>
+        <globalevent name="playersrecord" type="record" event="script" value="record.lua"/>
+        <globalevent name="clean" interval="7200" event="script" value="clean.lua"/>
+        <globalevent name="serverstart" type="start" event="script" value="start.lua"/>
+        <globalevent name="website_shop_item_delivery" interval="30" event="script" value="shop.lua"/>
+		<globalevent name="vipEffect" interval="10" script="vipeffect.lua"/>
+		<globalevent name="check" interval="45" event="script" value="check.lua"/> 
+		<globalevent name="HouseClean" time="00:00" event="script" value="houseclean.lua"/>
+	
+
+	
+</globalevents>

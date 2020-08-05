@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Exchanger" script="data/npc/scripts/Exchanger.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="344" head="79" body="120" legs="125" feet="45" addons="3"/>
+	<voices>
+		<voice text="Exchange your item's here!" interval2="100" margin="1" yell="no"/>
+		<voice text="Need a new look? Visit me!" interval2="120" margin="2" yell="no"/>
+	</voices>
+	<parameters>
+		<parameter key="message_greet" value="Hello, How may I assist you?"/>
+		<parameter key="message_farewell" value="Good bye."/>
+		<parameter key="message_walkaway" value="Good bye..." />
+		<parameter key="module_keywords" value="1" />
+		<parameter key="keywords" value="trade;offer" />
+		<parameter key="keyword_reply1" value="Here change some items for {spider silk yarn}, {chunk of crude iron}, {draconian steel}, {warrior's sweat}, {magic sulphur}, {enchanted chicken wing}, {royal steel}, {hell steel}, {fighting spirit}, {infernal bolt}, {lottery ticket}." />
+		<parameter key="keyword_reply2" value="I offer my resources and time to help people obtain new looks." />
+	</parameters>
+</npc>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Grizzly Adams" script="data/npc/scripts/Grizzly Adams.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="144" head="97" body="97" legs="94" feet="97" addons="3"/>
+<voices>
+<voice text="Write Task to start a task with number one !" interval2="100" margin="1" yell="no"/>
+</voices>
+<parameters>
+<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="demon backpack,10518,1000;" />
+	 <parameter key="shop_sellable" value="cyclops trophy,7398,500;minotaur trophy,7401,500;deer trophy,7397,3000;lion trophy,7400,3000;wolf trophy,7394,3000;behemoth trophy,7396,20000;demon trophy,7393,40000;dragon lord trophy,7399,10000;i,11208,50;i,10549,100;i,11183,35;i,10573,55;i,10564,30;i,11193,600;i,11366,80;i,10578,420;i,11222,400;i,11367,20;i,10547,280;i,11365,60;i,11363,170;i,11184,95" />
+        <parameter key="message_greet" value="Be greeted, noble |PLAYERNAME| and welcome to my hut."/>
+        <parameter key="message_farewell" value="Come back soon, noble |PLAYERNAME|."/>
+		<parameter key="message_walkaway" value="Come back soon, noble." />
+		<parameter key="message_sendtrade" value="Let's see what you got there." />
+</parameters>
+
+</npc>

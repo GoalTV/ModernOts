@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Bomber Man" script="data/npc/scripts/Bomber Man.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="234" />
+	<parameters>
+		<parameter key="message_greet" value="Hello, how may I help you |PLAYERNAME|?"/>
+		<parameter key="message_farewell" value="It was a pleasure to help you, |PLAYERNAME|."/>
+		<parameter key="message_walkaway" value="Good bye..." />
+	</parameters>
+</npc>

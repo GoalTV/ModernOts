@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Storm Wolf" nameDescription="a Storm Wolf" race="blood" experience="10000000" speed="800" manacost="0">
+
+    <health now="50000" max="50000"/>
+    <look type="132" head="76" body="38" legs="0" feet="95" corpse="6080"/>
+    <targetchange interval="5000" chance="50"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="0"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="0"/>
+        <flag convinceable="0"/>
+        <flag pushable="1"/>
+        <flag canpushitems="1"/>
+        <flag canpushcreatures="1"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="70"/>
+        <flag runonhealth="100"/>
+    </flags>
+    <attacks>
+             <attack name="melee" interval="2000" skill="90" attack="700" curse="4000"/>
+     <attack name="outfit" interval="5000" chance="90" range="1" type="308" duration="10000">
+     <attribute key="areaeffect" value="bigclouds"/>
+    </attack>
+             <attack name="speed" interval="5000" chance="90" radius="4" range="1" target="1" speedchange="-950" duration="3000">
+             <attribute key="shootEffect" value="death"/>
+    </attack>
+    </attacks>
+    <defenses armor="25" defense="25">
+             <defense name="healing" interval="500" chance="23" min="20" max="400">
+             <attribute key="areaEffect" value="mortarea"/>
+    </defense>
+             <defense name="outfit" interval="6000" chance="90" type="308" duration="3000">
+             <attribute key="areaEffect" value="bigclouds"/>
+    </defense>
+    </defenses>
+    <elements>
+              <element holyPercent="-30"/>
+    </elements>
+    <immunities>
+              <immunity invisible="1"/>
+              <immunity paralyze="1"/>
+    </immunities>
+    <voices interval="5000" chance="30">
+              <voice sentence="AWWWWWWWWWWWWW" yell="1"/>
+    </voices>
+    <loot>
+     <item id="5897" countmax="4" chance="100000"/><!-- wolf paws -->
+	 <item id="2160" countmax="50" chance="100000"/>
+	 <item id="7368" countmax="5" chance="100000"/>
+    </loot>
+</monster>

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mod name='HappyHours' version='1.0' author='Tomek/Xevis' contact='xevis@ovi.com' enabled='yes'>
+
+    <config name='happyHoursConf'>
+        <![CDATA[
+            HH_STORAGE = 2327
+            HH_EXTRA_EXP_PERCENT = 3
+         
+            DAYS = {
+                ['Monday'] = {
+                    {from = '16:00:00', to = '22:00:00'} 
+                },
+                ['Tuesday'] = {
+                    {from = '16:00:00', to = '22:00:00'}
+                },
+                ['Sunday'] = {
+                    {from = '16:00:00', to = '22:00:00'}
+                },
+                ['Wednesday'] = {
+                    {from = '16:00:00', to = '22:00:00'}
+                },
+                ['Thursday'] = {
+                    {from = '16:00:00', to = '22:00:00'}
+                },
+                ['Friday'] = {
+                    {from = '19:00:00', to = '23:00:00'}
+                },
+                ['Saturday'] = {
+                    {from = '16:00:00', to = '22:00:00'}
+                },
+                ['Sunday'] = {
+                    {from = '16:00:00', to = '22:00:00'}
+                }
+            }
+         
+        ]]>
+    </config>
+
+    <lib name='happyHoursLib'>
+        <![CDATA[
+            function doPlayerSetSkills(cid, value)
+                for i = 0, 8 do
+                    doPlayerSetRate(cid, i, value)
+                end
+            end
+
+            function stopNewWorld()
+                doSetStorage(HH_STORAGE, -1)
+
+                for _, cid in ipairs(getPlayersOnline()) do
+                    doPlayerSetSkills(cid, 1)
+                end
+
+                doBroadcastMessage('HappyHours ends! Rates back to normal.')
+            end
+        ]]>
+    </lib>
+ 
+    <globalevent name="happyHoursStop" interval="1000" event="script">
+        <![CDATA[
+            domodlib('happyHoursConf')
+            domodlib('happyHoursLib')
+
+            local daysOpen = {}
+         
+            for k, v in pairs(DAYS) do
+                table.insert(daysOpen, k)
+            end
+         
+            function onThink(interval)
+                if isInArray(daysOpen, os.date('%A')) then
+                    for k, v in pairs(DAYS[os.date('%A')]) do
+                        if isInArray(v.to, os.date('%X', os.time())) then
+                                stopNewWorld()
+                            break
+                        end
+                    end
+                end
+                return true
+            end
+        ]]>
+    </globalevent> 
+ 
+    <globalevent name="happyHoursStart" interval="1000" event="script">
+        <![CDATA[
+            domodlib('happyHoursConf')
+            domodlib('happyHoursLib')
+
+            local daysOpen = {}
+         
+            for k, v in pairs(DAYS) do
+                table.insert(daysOpen, k)
+            end
+         
+            function onThink(cid, interval)
+                if isInArray(daysOpen, os.date('%A')) then
+                    for _, d in pairs(DAYS[os.date('%A')]) do
+                        if isInArray(d.from, os.date('%X', os.time())) then
+                            local newRate = 1 + (HH_EXTRA_EXP_PERCENT/100)
+
+                            for _, cid in ipairs(getPlayersOnline()) do
+                                doPlayerSetSkills(cid, newRate)
+                            end
+                         
+                            doSetStorage(HH_STORAGE, 1)
+                         
+                            doBroadcastMessage('Happy Hours! Rates have changed to: ' .. newRate .. '! Rates will back to normal at ' .. d.to .. ' (server time). Have fun!!', MESSAGE_STATUS_WARNING)
+                            break
+                        end
+                    end
+                end
+                return true
+            end
+        ]]>
+    </globalevent>
+
+    <event type='login' name='happyHoursLogin' event='script'>
+        <![CDATA[
+            domodlib('happyHoursConf')
+            domodlib('happyHoursLib')
+
+            function onLogin(cid)
+                if getStorage(HH_STORAGE) == 1 then
+                    local newRate = 1 + (HH_EXTRA_EXP_PERCENT/100)
+                    doPlayerSetSkills(cid, newRate)
+                    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ORANGE, 'Happy Hours! Rates have changed to: ' .. newRate .. '! Have fun!!')
+                end
+                return true
+            end
+        ]]>
+    </event>
+</mod>

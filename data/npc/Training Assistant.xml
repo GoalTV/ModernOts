@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Training Assistant" script="data/npc/scripts/Training Assistant.lua" walkinterval="2000" floorchange="0">
+<health now="185" max="185"/>
+<look type="160" head="95" body="23" legs="22" feet="116" addons="0"/>
+</npc>

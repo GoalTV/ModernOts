@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Chantalle" script="data/npc/scripts/Chantalle.lua" walkinterval="1000" floorchange="0">
+    <health now="100" max="100"/>
+    <look type="140" head="79" body="15" legs="55" feet="110" addons="1"/>
+	<voices>
+<voice text="mumbling Smelled like fish anyway." interval2="100" margin="1" yell="no"/>
+</voices>
+	</npc>
+ 

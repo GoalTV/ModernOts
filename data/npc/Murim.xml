@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Murim" script="data/npc/scripts/Murim.lua" walkinterval="2000" floorchange="0">
+<health now="185" max="185"/>
+<look type="160" head="95" body="23" legs="22" feet="116" addons="0"/>
+	<voices>
+		<voice text="Trust me with your money, I guarantee it will be safe." interval2="100" margin="1" yell="no"/>
+		<voice text="Hey, send a letter to your friend now and then. Keep in touch, you know." interval2="120" margin="1" yell="no"/>
+		<voice text="I am the postman and the banker around here!" interval2="90" margin="1" yell="no"/>
+	</voices>
+	<parameters>
+		<parameter key="module_keywords" value="1" />
+		<parameter key="keywords" value="farmine;kazordoon;mission;excalibug;dwarf;ongulf;esrik;mining guild;elves;" />
+		<parameter key="keyword_reply1" value="A promising project for Kazordoon." />
+		<parameter key="keyword_reply2" value="I hope this new project lets Kazordoon prosper. Half of my family is involved in Farmine one way or another. If things turn out well, we will earn a hefty sum of money." />
+		<parameter key="keyword_reply3" value="My only mission is to keep this little office running." />
+		<parameter key="keyword_reply4" value="A weapon of pure power - or a weapon of pure imagination. Who knows?" />
+		<parameter key="keyword_reply5" value="Ah, my proud brothers and sisters. Only dwarfs could succeed with such an immense tunnelling project." />
+		<parameter key="keyword_reply6" value="Now he is one-of-a-kind and a born leader." />
+		<parameter key="keyword_reply7" value="If he only stopped bugging Ongulf about resources. We've already spent too much money on things that yield no immediate profit. ... But in the end, only profit will convince the imperial mining guild to continue their support." />
+		<parameter key="keyword_reply8" value="It took my three weeks with almost no sleep to do all the paperwork for my business permission, but it was worth it! ... The guild is sticking to the old traditions and that is a good thing for sure." />
+		<parameter key="keyword_reply9" value="Luckily we're far away from them." />
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="label,2599,1;parcel,2595,10;letter,2597,5;" />
+		<parameter key="message_greet" value="Be greeted, noble |PLAYERNAME| and welcome to the post office."/>
+		<parameter key="message_farewell" value="Come back soon, noble |PLAYERNAME|."/>
+		<parameter key="message_walkaway" value="Come back soon, noble." />
+		<parameter key="message_sendtrade" value="Here. Don't forget that you need to buy a label too if you want to send a parcel. Always write the name of the {receiver} in the first line and the name of the {city} in the second line." />
+	</parameters>
+</npc>

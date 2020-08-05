@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<npc name="Dream Master" script="dreamers.lua" access="5" lookdir="2" walkinterval="2000">
+  <mana now="800" max="800" />
+  <health now="200" max="200" />
+    <look type="130" head="19" body="86" legs="87" feet="95" addons="2"/>
+  <parameters>
+    <parameter key="message_greet" value="Greetings. I am the Dream Master, what do you need?"/>
+        <parameter key="message_farewell" value="Good bye."/>
+        <parameter key="message_walkaway" value="Farewell then.." />
+    </parameters>
+</npc>
