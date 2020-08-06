@@ -19,7 +19,7 @@
 -And small tweaks to files
 
 
--- 0.3 (Unstable not tested)
+-- 0.03 (Unstable not tested)
 -Removed suppoort for Windows (It may still work with old version of source Crying damson 0.3.6).
 -Updated to run on Ubuntu VERSION="20.04.1 LTS (Focal Fossa)".
 -Fixed db.query issue.
@@ -29,3 +29,10 @@
 -Clean up few files.
 -Removed non-working scripts.
 -fixed non-loaded spells and runes.
+
+-- 0.04
+- Updated Map Templete area
+- removed unwanted files
+- fixed map errors
+- removed shop bulding
+- added new Guild house to old shop bulding

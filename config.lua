@@ -117,7 +117,7 @@
 	sqlHost = "localhost"
 	sqlPort = 3306
 	sqlUser = "root"
-	sqlPass = "******"
+	sqlPass = "Enter-Password-Here"
 	sqlDatabase = "ots"
 	sqlFile = "forgottenserver.s3db"
 	sqlKeepAlive = 0
