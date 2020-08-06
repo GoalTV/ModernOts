@@ -42,7 +42,7 @@ echo after disconnection you can return to server by command
 echo screen -r
 echo -
 echo server is located in /ots/ModernOts/
-echo-
+echo -
 echo MySQL Password setup
 sleep 5
 mysql_secure_installation
