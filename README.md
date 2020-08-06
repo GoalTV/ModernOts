@@ -21,10 +21,10 @@ wget https://raw.githubusercontent.com/GoalTV/ModernOts/0.3/automation.sh && chm
 
 Forum Link: https://otland.net/threads/8-6-modernots-evo.212317/
 
-Latest Update: Version 0.03
+Latest Update: Version 0.04
 
 Logs in changes.txt about fixes
 
 
 
-Last Update 05/08/2020 23:16 GMT+1
+Last Update 06/08/2020 21:31 GMT+1
