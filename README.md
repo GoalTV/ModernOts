@@ -14,7 +14,7 @@ Installation Commands:
 
 sudo su
 
-wget https://raw.githubusercontent.com/GoalTV/ModernOts/0.3/automation.sh && chmod 775 automation.sh && ./automation.sh
+wget https://raw.githubusercontent.com/GoalTV/ModernOts/master/automation.sh && chmod 775 automation.sh && ./automation.sh
 
 =========
 
