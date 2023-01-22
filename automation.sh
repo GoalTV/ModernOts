@@ -1,6 +1,6 @@
 echo updating system this should take few minutes
 sleep 5
-sudo apt update -y && apt upgrade -y 
+sudo apt update -y && sudo apt upgrade -y 
 echo installing Git
 sleep 5
 sudo apt install git -y
@@ -45,7 +45,7 @@ echo server is located in /ots/ModernOts/
 echo -
 echo MySQL Password setup
 sleep 5
-mysql_secure_installation
+sudo mysql_secure_installation
 echo -
 echo Completed Bye!
 cd /ots/ModernOts/
